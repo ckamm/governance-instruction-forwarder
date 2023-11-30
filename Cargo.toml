@@ -1,0 +1,15 @@
+[package]
+name = "instruction_forwarder"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.16"
+
+[lib]
+name = "instruction_forwarder"
+crate-type = ["cdylib", "lib"]
+doctest = false
